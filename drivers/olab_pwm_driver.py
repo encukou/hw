@@ -8,6 +8,15 @@ Based on the Adafruit PCA9685 driver:
     Copyright (c) 2016 Radomir Dopieralski, written for Adafruit Industries
 
 Licensed under the MIT License
+
+
+After initialization, this class can be indexed to get individual PWM objects.
+For example, for a SG90 servo connected to the first output:
+
+    pca = PCA9685(i2c, 0x40, freq=50)
+    servo = olab_servo.SG90(pwm=pca[0])
+
+Note that the frequency is shared and cannot be set on the individual PWMs.
 """
 
 import ustruct
