@@ -55,7 +55,6 @@ class SG90:
         self._max_value = max_value
         self._value_range = max_value - min_value
         period_ms = 1000 / freq
-        print(max_duty)
         self._min_duty = min_pulse_ms / period_ms * max_duty
         self._max_duty = max_pulse_ms / period_ms * max_duty
         if not (0 < self._min_duty < self._max_duty < max_duty):
