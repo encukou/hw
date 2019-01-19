@@ -89,7 +89,7 @@ class PCF8574:
         if new_value is None:
             return self.expander.read_bits()
         else:
-            self.expander.write_bits()
+            self.expander.write_bits(new_value)
 
     def __getitem__(self, item):
         """Get a subset of pins, on which value() can be called.
