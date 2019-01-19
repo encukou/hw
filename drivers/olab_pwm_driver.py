@@ -47,7 +47,7 @@ MODE2_OUTDRV = const(0x04)
 MODE2_OCH = const(0x08)
 MODE2_INVRT = const(0x10)
 
-ONOFF_ALWAYS = const(0x10)
+ONOFF_ALWAYS = const(0x1000)
 
 MAX_DUTY = const(0x1000)
 
